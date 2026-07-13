@@ -15,8 +15,12 @@ class vehicle:
 
     def on(self):
         self.status=True
+    
+    def info(self):
+        print(f"Vehicle Type : {self.name}\nEngine is {self.status}!!!!")
 
 car=vehicle("Maruti",400)
+car.info()
 car.get()
 car.on()
 car.get()
